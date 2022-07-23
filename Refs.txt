@@ -1,0 +1,25 @@
+
+https://capacitorjs.com/docs/apis/camera
+npm install @capacitor/camera
+
+
+↑↑↑ --- 333333333333333333333333333333 --- ↑↑↑
+
+https://typestrong.org/ts-node/
+npm install -D ts-node
+
+$ npx ts-node src/demo.ts
+
+''''''''''''''''''''''''''''
+traspilado:
+  A: npx tsc --watch
+  B: node dist/{file}.js
+
+edit tsconfig.json: [
+    "outDir": "./dist",
+]
+
+$ npx tsc --init
+$ npx tsc --version
+$ npm i typescript --save-dev
+$ npm init -y
