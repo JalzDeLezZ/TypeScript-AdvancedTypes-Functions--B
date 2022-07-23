@@ -1,3 +1,8 @@
+// execute file TS
+// npx ts-node src/02-tuplas.ts
+
+↑↑↑ --- 444444444444444444444444444444 --- ↑↑↑
+
 
 https://capacitorjs.com/docs/apis/camera
 npm install @capacitor/camera
