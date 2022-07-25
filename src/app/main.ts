@@ -3,6 +3,24 @@ import { faker, FakerError } from '@faker-js/faker';
 
 for (let i = 0; i < 50; i++) {
   addProduct({
+    description: faker.commerce.productDescription(),
+    image: faker.image.imageUrl(),
+    color: faker.color.human(),
+    price: parseInt(faker.commerce.price(), 10),
+    title: faker.commerce.productName(),
+    isNew: faker.datatype.boolean(),
+    tags: faker.helpers.arrayElements(),
+    stock: faker.datatype.number({ min: 10, max: 100 }),
+    size: faker.helpers.arrayElement(['S', 'M', 'L', 'XL', 'XXL']),
+    categoryId: faker.datatype.uuid()
+  });
+}
+
+console.log(products);
+
+
+/*
+addProduct({
     id: faker.datatype.uuid(),
     description: faker.commerce.productDescription(),
     image: faker.image.imageUrl(),
@@ -22,6 +40,4 @@ for (let i = 0; i < 50; i++) {
       upDateAt: faker.date.recent(),
     },
   });
-}
-
-console.log(products);
+*/
