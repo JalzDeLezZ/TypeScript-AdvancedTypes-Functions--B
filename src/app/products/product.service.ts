@@ -35,7 +35,11 @@ export const updateProduct = (id: Product['id'], changes: UpdateProductDTO): Pro
 };
 
 export const findProducts = (pDTO : FindProductDTO): Product[] => {
-  // pDTO.color = "red"
+  // pDTO.color = "red" // not found
+  // pDTO.tags = ['red', 'blue']; // not found
+  // pDTO.tags?.pop(); // it works
+  // pDTO.tags?.push('blue'); // it works
+
   return products;
 }
 

@@ -14,8 +14,12 @@ type ex1Pick = Pick<Product, 'color' | 'price' | 'size'>;
 
 export interface UpdateProductDTO extends Partial<CreateProductDTO> {}
 
+// type ex21Required = Partial<Product>;
 type ex2Required = Required<Product>;
 
-export interface FindProductDTO extends Readonly<Partial<Product>> {}
+// export interface FindProductDTO extends Readonly<Partial<Product>> {}
+export interface FindProductDTO extends Readonly<Partial<Omit<Product, 'tags'>>> {
+  readonly tags : ReadonlyArray<string>;
+}
 
 type ex3ReadOnly = Readonly<Product>;
