@@ -33,6 +33,25 @@ findProducts({
   stock: 10,
   color: 'red'
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 addProduct({
     id: faker.datatype.uuid(),

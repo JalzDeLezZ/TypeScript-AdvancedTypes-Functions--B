@@ -22,7 +22,7 @@ export const addProduct = (data: CreateProductDTO) : Product => {
   return newProduct;
 };
 
-export const updateProduct = (id: string | number, changes: UpdateProductDTO): Product => {
+export const updateProduct = (id: Product['id'], changes: UpdateProductDTO): Product => {
 
   const index = products.findIndex(e => e.id === id);
   const prevData = products[index];
@@ -38,6 +38,21 @@ export const findProducts = (pDTO : FindProductDTO): Product[] => {
   // pDTO.color = "red"
   return products;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // delete, get
 
