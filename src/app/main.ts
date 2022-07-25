@@ -2,6 +2,7 @@ import {
   addProduct,
   products,
   updateProduct,
+  findProducts
 } from './products/product.service';
 
 import { faker, FakerError } from '@faker-js/faker';
@@ -28,6 +29,10 @@ updateProduct(product.id, {
   title: 'New Title',
 })
 
+findProducts({
+  stock: 10,
+  color: 'red'
+})
 /*
 addProduct({
     id: faker.datatype.uuid(),
