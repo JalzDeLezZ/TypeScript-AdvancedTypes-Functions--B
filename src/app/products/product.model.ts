@@ -5,7 +5,13 @@ export type Sizes = 'S' | 'M' | 'L' | 'XL' | 'XXL';
 
 export interface Product extends BaseModel {
   title: string;
+  image: string;
+  description: string;
   stock: number;
+  color: string;
+  price: number;
   size?: Sizes;
   category: Category;
+  isNew: boolean;
+  tags: string[];
 }

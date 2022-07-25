@@ -1,3 +1,10 @@
+https://fakerjs.dev/
+npm install @faker-js/faker --save-dev
+
+↑↑↑ --- ===16===16===16===16===16===16=== --- ↑↑↑
+↑↑↑ --- ===16===16===16===16===16===16=== --- ↑↑↑
+↑↑↑ --- ===16===16===16===16===16===16=== --- ↑↑↑
+
 // execute file TS
 // npx ts-node src/02-tuplas.ts
 
