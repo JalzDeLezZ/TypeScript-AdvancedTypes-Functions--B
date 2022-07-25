@@ -1,7 +1,8 @@
+import { updateProduct } from './product.service';
 
 // type CreateProductDTO = Omit<Product, 'id' | 'createAt' | 'upDateAt' | 'category'>;
 
-import { Product } from "./product.model";
+import { Product } from './product.model';
 
 export interface CreateProductDTO
   extends Omit<Product, 'id' | 'createAt' | 'upDateAt' | 'category'> {
@@ -11,3 +12,7 @@ export interface CreateProductDTO
 
 // with the Pick, we can choose which properties we want to use
 type example = Pick<Product, 'color' | 'price' | 'size'>;
+
+export interface UpdateProductDTO extends Partial<CreateProductDTO> {}
+
+type example2 = Required<Product>;
